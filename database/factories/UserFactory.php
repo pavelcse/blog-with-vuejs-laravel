@@ -1,6 +1,9 @@
 <?php
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
+
+use App\Models\Category;
+use App\Models\Post;
 use App\Models\User;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
@@ -25,3 +28,22 @@ $factory->define(User::class, function (Faker $faker) {
         'remember_token' => Str::random(10),
     ];
 });
+
+$factory->define(Category::class, function (Faker $faker) {
+    return [
+        'Category' => $faker->name,
+    ];
+});
+
+$factory->define(Post::class, function (Faker $faker) {
+    return [
+        'category_id' => rand(1, 10),
+        'user_id' => rand(1, 10),
+        'comment_id' => rand(1, 10),
+        'title' => $faker->sentence,
+        'description' => $faker->paragraph,
+        'photo' => $faker->imageUrl,
+    ];
+});
+
+
