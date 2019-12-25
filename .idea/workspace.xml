@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f76246fc-c08b-4bd1-99b4-cb46a3791c57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+    <list default="true" id="f76246fc-c08b-4bd1-99b4-cb46a3791c57" name="Default Changelist" comment="Install Vue Router">
+      <change afterPath="$PROJECT_DIR$/resources/js/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/adminmaster.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adminmaster.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +171,8 @@
       <option name="presentableId" value="Default" />
       <updated>1576935209147</updated>
       <workItem from="1576935224913" duration="1977000" />
-      <workItem from="1576937755363" duration="8612000" />
+      <workItem from="1576937755363" duration="9918000" />
+      <workItem from="1577235321457" duration="1242000" />
     </task>
     <task id="LOCAL-00001" summary="Configure AdminLTE And Create Some Migration">
       <created>1576943630551</created>
@@ -184,7 +181,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576943630551</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create Post &amp; Category Controller With Resource Route">
+      <created>1576949276416</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576949276416</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Install Vue Router">
+      <created>1576950427482</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576950427482</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +204,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Configure AdminLTE And Create Some Migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configure AdminLTE And Create Some Migration" />
+    <MESSAGE value="Create Post &amp; Category Controller With Resource Route" />
+    <MESSAGE value="Install Vue Router" />
+    <option name="LAST_COMMIT_MESSAGE" value="Install Vue Router" />
   </component>
   <component name="WindowStateProjectService">
     <state x="801" y="333" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1576938037081">
@@ -204,10 +217,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="894" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1576945655802" />
-    <state x="787" y="39" key="CommitChangelistDialog2" timestamp="1576943626593">
+    <state x="787" y="39" key="CommitChangelistDialog2" timestamp="1576950505965">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="787" y="39" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1576943626593" />
+    <state x="787" y="39" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1576950505965" />
     <state x="575" y="190" key="SettingsEditor" timestamp="1576942008249">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
