@@ -7,35 +7,42 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         return Category::all();
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'name' => 'required|min:2|max:50',
+            'is_published' => 'nullable',
+        ]);
+
+        try {
+            $category = new Category();
+            $category->name = request()->name;
+            $category->is_published = request()->is_published;
+            $category->save();
+
+        } catch (\Throwable $exception) {
+            return response()->json([
+                'message' => 'Something Wrong. Please Try Again!!!',
+                'type' => 'error'
+            ]);
+        }
+
+        return response()->json([
+            'message' => 'Category Added Successfully',
+            'type' => 'success'
+        ]);
     }
 
     /**
