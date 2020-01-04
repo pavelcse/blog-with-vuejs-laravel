@@ -2,20 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f76246fc-c08b-4bd1-99b4-cb46a3791c57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/admin/AdminHome.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/admin/AdminMaster.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/admin/AdminPost.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/admin/categories/CategoryAddEditComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/admin/categories/CategoryListComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/admin/categories/CategoryViewComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload_images/1578157665.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload_images/1578157933.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/admin/posts/PostAddEditComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/admin/posts/PostListComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/admin/posts/PostViewComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_21_151948_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_21_151948_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/admin/AdminPost.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/admin/categories/CategoryAddEditComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/admin/categories/CategoryAddEditComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/admin/categories/CategoryListComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/admin/categories/CategoryListComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/adminmaster.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adminmaster.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -34,6 +48,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Blade" />
+        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
       </list>
     </option>
@@ -130,6 +145,10 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="ProjectId" id="1VIKWydO4w4Yy6o8ECTKGN33nSl" />
@@ -187,7 +206,8 @@
       <workItem from="1577235321457" duration="2248000" />
       <workItem from="1577321527545" duration="1303000" />
       <workItem from="1577427044736" duration="724000" />
-      <workItem from="1577513270673" duration="13195000" />
+      <workItem from="1577513270673" duration="16893000" />
+      <workItem from="1578127862393" duration="21911000" />
     </task>
     <task id="LOCAL-00001" summary="Configure AdminLTE And Create Some Migration">
       <created>1576943630551</created>
@@ -217,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577236685647</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Use v-form, sweet alert2, form submit, some component, Install Vuex">
+      <created>1577547745161</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577547745161</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,25 +256,30 @@
     <MESSAGE value="Create Post &amp; Category Controller With Resource Route" />
     <MESSAGE value="Install Vue Router" />
     <MESSAGE value="Configure Vue Router" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configure Vue Router" />
+    <MESSAGE value="Use v-form, sweet alert2, form submit, some component, Install Vuex" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use v-form, sweet alert2, form submit, some component, Install Vuex" />
   </component>
   <component name="WindowStateProjectService">
     <state x="801" y="333" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1576938037081">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="801" y="333" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1576938037081" />
-    <state x="894" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1576945655802">
+    <state x="689" y="255" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578138944173">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="894" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1576945655802" />
+    <state x="689" y="255" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578138944173" />
+    <state x="894" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578152932523">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="894" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578152932523" />
     <state x="591" y="199" key="CommitChangelistDialog2" timestamp="1577547741345">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="591" y="199" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1577547741345" />
-    <state x="824" y="319" key="FileChooserDialogImpl" timestamp="1577524986566">
+    <state x="824" y="319" key="FileChooserDialogImpl" timestamp="1578152360846">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="824" y="319" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1577524986566" />
+    <state x="824" y="319" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1578152360846" />
     <state x="575" y="190" key="SettingsEditor" timestamp="1576942008249">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -256,9 +288,13 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1920.1050@0.0.1920.1050" timestamp="1576941999150" />
-    <state x="1018" y="371" width="672" height="678" key="search.everywhere.popup" timestamp="1577523991230">
+    <state x="647" y="116" width="622" height="783" key="find.popup" timestamp="1578138647820">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1018" y="371" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1577523991230" />
+    <state x="647" y="116" width="622" height="783" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578138647820" />
+    <state x="1018" y="371" width="672" height="678" key="search.everywhere.popup" timestamp="1578153649458">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1018" y="371" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578153649458" />
   </component>
 </project>

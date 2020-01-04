@@ -2,7 +2,7 @@
     <section class="content">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Category Component</h3>
+                <h3 class="card-title">Categories</h3>
 
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -21,17 +21,21 @@
                             <tr>
                                 <th>SL</th>
                                 <th>Category Name</th>
+                                <th>Published</th>
+                                <th>Created</th>
                                 <th>Actions</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>01</td>
-                                <td>Fashion</td>
+                            <tr v-for="(category, index) in getCategories">
+                                <td> {{ index + 1 }} </td>
+                                <td>{{ category.name }}</td>
+                                <td>{{ category.is_published ? 'Yes' : 'No' }}</td>
+                                <td>{{ category.created_at | timeFormat }}</td>
                                 <td>
                                     <a class="btn btn-sm btn-info mx-2 text-white" href="">View</a>
-                                    <a class="btn btn-sm btn-primary mx-2 text-white" href="">Edit</a>
-                                    <a class="btn btn-sm btn-danger mx-2 text-white" href="">Delete</a>
+                                    <router-link :to="`/category-edit/${category.id}`" class="btn btn-sm btn-primary mx-2 text-white" href="">Edit</router-link>
+                                    <a class="btn btn-sm btn-danger mx-2 text-white" href="" @click.prevent="deleteCategory(category.id)">Delete</a>
                                 </td>
                             </tr>
                             </tbody>
@@ -48,7 +52,33 @@
 
 <script>
     export default {
-        name: "CategoryListComponent"
+        name: "CategoryListComponent",
+        mounted() {
+            this.$store.dispatch("allCategories")
+        },
+        computed: {
+            getCategories() {
+               return this.$store.getters.getCategories;
+            }
+        },
+        methods: {
+            deleteCategory(categoryId) {
+                axios.delete('/categories/' + categoryId)
+                .then(({ data }) => {
+                    this.$store.dispatch("allCategories")
+                    toast.fire({
+                        icon: data.type,
+                        title: data.message
+                    })
+                })
+                .catch(({ data }) => {
+                    toast.fire({
+                        icon: data.type,
+                        title: data.message
+                    })
+                })
+            }
+        }
     }
 </script>
 

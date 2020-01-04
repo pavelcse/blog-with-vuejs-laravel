@@ -9,7 +9,10 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        return Category::all();
+        $categories =  Category::select('id', 'name', 'is_published', 'created_at')->get();
+        return response()->json([
+            'categories' => $categories
+        ], 200);
     }
 
 
@@ -45,48 +48,65 @@ class CategoryController extends Controller
         ]);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function edit($id)
     {
-        //
+        $category = Category::findOrFail($id);
+        return response()->json([
+            'category' => $category
+        ], 200);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function update(Request $request, $id)
     {
-        //
+        $category = Category::findOrFail($id);
+        $this->validate($request, [
+            'id' => 'required',
+            'name' => 'required|min:2|max:50',
+            'is_published' => 'nullable',
+        ]);
+
+        try {
+            $category->name = request()->name;
+            $category->is_published = request()->is_published;
+            $category->save();
+
+        } catch (\Throwable $exception) {
+            return response()->json([
+                'message' => 'Something Wrong. Please Try Again!!!',
+                'type' => 'error'
+            ]);
+        }
+
+        return response()->json([
+            'message' => 'Category Updated Successfully',
+            'type' => 'success'
+        ]);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy($id)
     {
-        //
+        try {
+            $category = Category::findOrFail($id);
+            $category->delete();
+
+        } catch (\Throwable $exception) {
+            return response()->json([
+                'message' => 'Something Wrong. Please Try Again!!!',
+                'type' => 'error'
+            ]);
+        }
+
+        return response()->json([
+            'message' => 'Category Deleted Successfully',
+            'type' => 'success'
+        ]);
     }
 }

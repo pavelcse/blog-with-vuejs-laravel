@@ -8,9 +8,23 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import { filter } from './filter'
+
 /** VueX */
 import Vuex from 'vuex'
 Vue.use(Vuex)
+
+import StoreData from './store/index'
+const store = new Vuex.Store(
+    StoreData
+)
+
+/** Markdown Editor */
+import 'v-markdown-editor/dist/index.css';
+import Editor from 'v-markdown-editor'
+
+// global register
+Vue.use(Editor);
 
 
 import VueRouter from 'vue-router'
@@ -55,7 +69,7 @@ import {routes} from './routes'
 Vue.component('admin-master', require('./components/admin/AdminMaster').default);
 
 const router = new VueRouter({
-    mode: 'history',
+    mode: 'hash',
     routes
 });
 /**
@@ -66,5 +80,6 @@ const router = new VueRouter({
 
 const app = new Vue({
     el: '#app',
-    router
+    router,
+    store
 });
