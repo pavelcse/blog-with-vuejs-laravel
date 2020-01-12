@@ -70,14 +70,14 @@
         methods: {
             deletePost(postId) {
                 axios.delete('/posts/' + postId)
-                    .then(({ data }) => {
+                    .then(( data ) => {
                         this.$store.dispatch("allPosts")
                         toast.fire({
                             icon: data.type,
                             title: data.message
                         })
                     })
-                    .catch(({ data }) => {
+                    .catch(( data ) => {
                         toast.fire({
                             icon: data.type,
                             title: data.message

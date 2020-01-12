@@ -23,4 +23,7 @@ export const routes = [
     {
         path: '/post-add', component: PostAddEditComponent
     },
+    {
+        path: '/post-edit/:id', component: PostAddEditComponent
+    },
 ]

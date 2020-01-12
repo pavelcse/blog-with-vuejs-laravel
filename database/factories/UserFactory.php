@@ -31,7 +31,8 @@ $factory->define(User::class, function (Faker $faker) {
 
 $factory->define(Category::class, function (Faker $faker) {
     return [
-        'Category' => $faker->name,
+        'name' => $faker->name,
+        'is_published' => 1,
     ];
 });
 

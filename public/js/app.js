@@ -4654,18 +4654,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "PostAddEditComponent",
   mounted: function mounted() {
+    var _this = this;
+
     this.$store.dispatch("allCategories");
-    /*if (this.$route.params.id) {
-        axios.get(`/categories/${this.$route.params.id}/edit`)
-            .then((res) => {
-                this.form.fill(res.data.category)
-                this.form.editable = true;
-            })
-            .catch()
-    }*/
+
+    if (this.$route.params.id) {
+      axios.get("/posts/".concat(this.$route.params.id, "/edit")).then(function (res) {
+        _this.form.fill(res.data.post);
+
+        _this.form.editable = true;
+      })["catch"]();
+    }
   },
   computed: {
     getCategories: function getCategories() {
@@ -4686,7 +4692,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     filePreview: function filePreview(event) {
-      var _this = this;
+      var _this2 = this;
 
       var file = event.target.files[0];
 
@@ -4700,24 +4706,24 @@ __webpack_require__.r(__webpack_exports__);
         var reader = new FileReader();
 
         reader.onload = function (event) {
-          _this.form.photo = event.target.result;
+          _this2.form.photo = event.target.result;
         };
 
         reader.readAsDataURL(file);
       }
     },
     savePost: function savePost() {
-      var _this2 = this;
+      var _this3 = this;
 
       if (this.form.editable) {
-        this.form.put("/categories/".concat(this.$route.params.id)).then(function (_ref) {
+        this.form.put("/posts/".concat(this.$route.params.id)).then(function (_ref) {
           var data = _ref.data;
           toast.fire({
             icon: data.type,
             title: data.message
           });
 
-          _this2.$router.push('/posts');
+          _this3.$router.push('/posts');
         })["catch"](function (_ref2) {
           var error = _ref2.error;
           console.log(error);
@@ -4730,7 +4736,7 @@ __webpack_require__.r(__webpack_exports__);
             title: data.message
           });
 
-          _this2.$router.push('/posts');
+          _this3.$router.push('/posts');
         })["catch"](function (_ref4) {
           var error = _ref4.error;
           console.log(error);
@@ -4823,17 +4829,14 @@ __webpack_require__.r(__webpack_exports__);
     deletePost: function deletePost(postId) {
       var _this = this;
 
-      axios["delete"]('/posts/' + postId).then(function (_ref) {
-        var data = _ref.data;
-
+      axios["delete"]('/posts/' + postId).then(function (data) {
         _this.$store.dispatch("allPosts");
 
         toast.fire({
           icon: data.type,
           title: data.message
         });
-      })["catch"](function (_ref2) {
-        var data = _ref2.data;
+      })["catch"](function (data) {
         toast.fire({
           icon: data.type,
           title: data.message
@@ -76702,7 +76705,25 @@ var render = function() {
     _c("div", { staticClass: "card" }, [
       _c("div", { staticClass: "card-header" }, [
         _c("h3", { staticClass: "card-title" }, [
-          _vm._v(_vm._s(_vm.form.editable ? "Edit" : "Add") + " Post")
+          _vm._v(
+            _vm._s(_vm.form.editable ? "Edit" : "Add") +
+              " Post\n                "
+          ),
+          _c(
+            "span",
+            {},
+            [
+              _c(
+                "router-link",
+                {
+                  staticClass: "btn btn-info text-white",
+                  attrs: { to: "/posts" }
+                },
+                [_vm._v("Post List")]
+              )
+            ],
+            1
+          )
         ])
       ]),
       _vm._v(" "),
@@ -93868,6 +93889,9 @@ var routes = [{
 }, {
   path: '/post-add',
   component: _components_admin_posts_PostAddEditComponent__WEBPACK_IMPORTED_MODULE_4__["default"]
+}, {
+  path: '/post-edit/:id',
+  component: _components_admin_posts_PostAddEditComponent__WEBPACK_IMPORTED_MODULE_4__["default"]
 }];
 
 /***/ }),
@@ -93936,8 +93960,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\XAMPP\htdocs\Laravel\blog\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\XAMPP\htdocs\Laravel\blog\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! E:\wamp\www\blog\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! E:\wamp\www\blog\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

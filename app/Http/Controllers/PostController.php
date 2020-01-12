@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Intervention\Image\ImageManagerStatic as Image;
 
 class PostController extends Controller
@@ -69,27 +70,61 @@ class PostController extends Controller
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function edit($id)
     {
-        //
+        $category = Post::findOrFail($id);
+        return response()->json([
+            'post' => $category
+        ], 200);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function update(Request $request, $id)
     {
-        //
+        $post = Post::findOrFail($id);
+        $this->validate($request, [
+            'title' => 'required|min:2|max:50',
+            'description' => 'required|min:2|max:500',
+            'category_id' => 'required|min:1',
+        ]);
+
+        try {
+            $post->title = request()->title;
+            $post->description = request()->description;
+            $post->category_id = request()->category_id;
+
+            if($request->photo && preg_match('/\bdata:image\b/', $request->photo)) {
+                $strpos = strpos($request->photo, ';');
+                $sub = substr($request->photo, 0, $strpos);
+                $ext = explode('/', $sub)[1];
+                $imageName = time().'.'.$ext;
+                $img = Image::make($request->photo)->resize(200, 200);
+                $path = public_path('upload_images/');
+                $img->save($path . $imageName);
+
+                $imgPath = public_path().'/'.$post->photo;
+                if(file_exists($imgPath)) {
+                    @unlink($imgPath);
+                }
+
+                $post->photo = 'upload_images/' . $imageName;
+            }
+
+            $post->save();
+
+        } catch (\Throwable $exception) {
+            Log::debug($exception);
+            return response()->json([
+                'message' => 'Something Wrong. Please Try Again!!!',
+                'type' => 'error'
+            ]);
+        }
+
+        return response()->json([
+            'message' => 'Post Updated Successfully',
+            'type' => 'success'
+        ]);
     }
 
 
@@ -97,6 +132,10 @@ class PostController extends Controller
     {
         try {
             $post = Post::findOrFail($id);
+            $imgPath = public_path().'/'.$post->photo;
+            if(file_exists($imgPath)) {
+                @unlink($imgPath);
+            }
             $post->delete();
 
         } catch (\Throwable $exception) {

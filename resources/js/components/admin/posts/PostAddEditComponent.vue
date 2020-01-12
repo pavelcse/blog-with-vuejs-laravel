@@ -3,7 +3,11 @@ import Swal from "sweetalert2";
     <section class="content">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">{{ form.editable ? 'Edit' : 'Add' }} Post</h3>
+                <h3 class="card-title">{{ form.editable ? 'Edit' : 'Add' }} Post
+                    <span class="">
+                        <router-link to="/posts" class="btn btn-info text-white">Post List</router-link>
+                    </span>
+                </h3>
             </div>
             <div class="card-body">
                 <div class="box box-primary">
@@ -59,14 +63,14 @@ import Swal from "sweetalert2";
         name: "PostAddEditComponent",
         mounted() {
             this.$store.dispatch("allCategories")
-            /*if (this.$route.params.id) {
-                axios.get(`/categories/${this.$route.params.id}/edit`)
+            if (this.$route.params.id) {
+                axios.get(`/posts/${this.$route.params.id}/edit`)
                     .then((res) => {
-                        this.form.fill(res.data.category)
+                        this.form.fill(res.data.post)
                         this.form.editable = true;
                     })
                     .catch()
-            }*/
+            }
         },
         computed: {
             getCategories() {
@@ -106,7 +110,7 @@ import Swal from "sweetalert2";
             },
             savePost() {
                 if(this.form.editable) {
-                    this.form.put(`/categories/${this.$route.params.id}`)
+                    this.form.put(`/posts/${this.$route.params.id}`)
                         .then(({ data }) => {
                             toast.fire({
                                 icon: data.type,
