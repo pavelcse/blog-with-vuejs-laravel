@@ -2,6 +2,143 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0c17667-89dc-4466-9ee0-4e208392ee4b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/contactform/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/contactform/contactform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/css/bootstrap-responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/css/cslider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/css/custom-fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/css/fancybox/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/css/fancybox/fancybox_loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/css/fancybox/fancybox_overlay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/css/fancybox/fancybox_sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/css/fancybox/jquery.fancybox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/css/flexslider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/css/jcarousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/css/overwrite.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/css/slitslider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/font/customicon/Icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/font/customicon/Icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/font/customicon/Icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/font/customicon/Icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/font/fontawesome/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/font/fontawesome/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/font/fontawesome/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/font/fontawesome/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/font/fontawesome/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/ico/apple-touch-icon-114-precomposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/ico/apple-touch-icon-144-precomposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/ico/apple-touch-icon-57-precomposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/ico/apple-touch-icon-72-precomposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/ico/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/ico/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/bodybg/bg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/bodybg/bg10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/bodybg/bg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/bodybg/bg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/bodybg/bg4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/bodybg/bg5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/bodybg/bg6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/bodybg/bg7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/bodybg/bg8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/bodybg/bg9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/blog/65x65/thumb1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/blog/65x65/thumb2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/blog/65x65/thumb3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/blog/img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/blog/img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/blog/img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/blog/thumbs/img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/blog/thumbs/img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/blog/thumbs/img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/blog/thumbs/img4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/blog/thumbs/no-thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/blog/thumbs/quote-thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/blog/thumbs/small1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/clients/client1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/clients/client2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/clients/client3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/clients/client4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/clients/client5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/clients/client6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/dummy-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/team1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/team2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/team3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/team4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/dummies/testimonial-author1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/glyphicons-halflings-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/glyphicons-halflings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/nivo-bullets.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/slides/nivo/bg-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/slides/nivo/bg-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/slides/nivo/bg-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/slides/parallax/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/slides/parallax/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/slides/parallax/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/slides/parallax/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/slides/parallax/arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/slides/parallax/bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/slides/slitslider/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/slides/slitslider/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/slides/slitslider/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/slides/slitslider/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/slides/slitslider/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/works/full/image-01-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/works/full/image-02-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/works/full/image-03-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/works/full/image-04-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/works/full/image-05-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/works/full/image-06-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/works/full/image-07-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/works/full/image-08-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/works/thumbs/image-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/works/thumbs/image-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/works/thumbs/image-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/works/thumbs/image-04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/works/thumbs/image-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/works/thumbs/image-06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/works/thumbs/image-07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/img/works/thumbs/image-08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/animate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/google-code-prettify/prettify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/google-code-prettify/prettify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/jcarousel/jquery.jcarousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/jcarousel/setting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/jquery.ba-cond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/jquery.cslider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/jquery.easing.1.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/jquery.fancybox-media.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/jquery.fancybox.pack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/jquery.flexslider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/jquery.nivo.slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/jquery.slitslider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/modernizr.custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/portfolio/jquery.quicksand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/portfolio/setting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/quicksand/jquery.quicksand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/js/quicksand/setting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/skins/blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/skins/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/skins/green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/skins/kissme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/skins/lime.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/skins/pink.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/skins/red.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/skins/rose.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/skins/sand.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/frontend/skins/yellow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -163,7 +300,7 @@
       <workItem from="1579050212898" duration="265000" />
       <workItem from="1579709219430" duration="262000" />
       <workItem from="1579846824489" duration="146000" />
-      <workItem from="1579943141846" duration="1826000" />
+      <workItem from="1579943141846" duration="3316000" />
     </task>
     <task id="LOCAL-00001" summary="Complete Post Functionality">
       <created>1578849436073</created>
@@ -186,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579943499600</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add middleware">
+      <created>1579970088629</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579970088629</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,25 +342,26 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Complete Post Functionality" />
     <MESSAGE value="assets" />
-    <option name="LAST_COMMIT_MESSAGE" value="assets" />
+    <MESSAGE value="add middleware" />
+    <option name="LAST_COMMIT_MESSAGE" value="add middleware" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="281" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578843980699">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="281" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578843980699" />
-    <state x="585" y="120" key="CommitChangelistDialog2" timestamp="1579943498142">
+    <state x="585" y="120" key="CommitChangelistDialog2" timestamp="1579970087459">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1579943498142" />
+    <state x="585" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1579970087459" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1579846968622">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1579846968622" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1579943542620">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1579970095070">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1579943542620" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1579970095070" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1578760314337">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
