@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0c17667-89dc-4466-9ee0-4e208392ee4b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/js/components/frontend/FrontHomeComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/frontend/FrontMasterComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/frontend/blog/BlogPostsComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/frontend/blog/BlogSidebarComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/frontend/blog/BlogSinglePostComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +23,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -163,7 +179,11 @@
       <workItem from="1579050212898" duration="265000" />
       <workItem from="1579709219430" duration="262000" />
       <workItem from="1579846824489" duration="146000" />
-      <workItem from="1579943141846" duration="3683000" />
+      <workItem from="1579943141846" duration="3799000" />
+      <workItem from="1580047875183" duration="726000" />
+      <workItem from="1580210772789" duration="111000" />
+      <workItem from="1580374443911" duration="3620000" />
+      <workItem from="1580451059139" duration="217000" />
     </task>
     <task id="LOCAL-00001" summary="Complete Post Functionality">
       <created>1578849436073</created>
@@ -200,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579971626615</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add frontend index page 1">
+      <created>1579971984775</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579971984775</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,36 +241,37 @@
     <MESSAGE value="assets" />
     <MESSAGE value="add middleware" />
     <MESSAGE value="add frontend index page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add frontend index page" />
+    <MESSAGE value="add frontend index page 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="add frontend index page 1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="281" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578843980699">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="281" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578843980699" />
-    <state x="585" y="120" key="CommitChangelistDialog2" timestamp="1579971624772">
+    <state x="585" y="120" key="CommitChangelistDialog2" timestamp="1579971995265">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1579971624772" />
+    <state x="585" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1579971995265" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1579846968622">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1579846968622" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1579971666188">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1579972023958">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1579971666188" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1579972023958" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1578760314337">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578760314337" />
-    <state x="769" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579971945387">
+    <state x="769" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580451276369">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="769" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1579971945387" />
-    <state x="623" y="244" width="672" height="678" key="search.everywhere.popup" timestamp="1579943620352">
+    <state x="769" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1580451276369" />
+    <state x="623" y="244" width="672" height="678" key="search.everywhere.popup" timestamp="1580375641973">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="244" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1579943620352" />
+    <state x="623" y="244" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1580375641973" />
   </component>
 </project>

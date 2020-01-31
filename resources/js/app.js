@@ -67,6 +67,7 @@ Vue.component(AlertError.name, AlertError)
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 import {routes} from './routes'
 Vue.component('admin-master', require('./components/admin/AdminMaster').default);
+Vue.component('public-master', require('./components/frontend/FrontMasterComponent'));
 
 const router = new VueRouter({
     mode: 'hash',

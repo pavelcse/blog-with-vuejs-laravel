@@ -4,6 +4,9 @@ import CategoryAddEditComponent from "./components/admin/categories/CategoryAddE
 import PostListComponent from './components/admin/posts/PostListComponent'
 import PostAddEditComponent from "./components/admin/posts/PostAddEditComponent";
 
+// Front Components
+import FrontHomeComponent from "./components/frontend/FrontHomeComponent";
+
 export const routes = [
     {
         path: '/home', component: AdminHome
@@ -26,4 +29,8 @@ export const routes = [
     {
         path: '/post-edit/:id', component: PostAddEditComponent
     },
-]
+
+    {
+        path: '/', component: FrontHomeComponent
+    },
+];
